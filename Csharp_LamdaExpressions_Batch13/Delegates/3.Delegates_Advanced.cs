@@ -1,11 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace DelegatesAdvanced
 {
+
+    class class2
+    {
+        void Method3()
+        {
+            
+
+        }
+    }
+
+    /* how to call members*/
     class Program
     {
         delegate int SquareDelegate(int x);
@@ -13,6 +21,7 @@ namespace DelegatesAdvanced
         delegate bool IsValidDelegate(int x);
 
         //SQuare is the method(Named)
+        //Func | Action | Predicate  .net pro developer
         static int Square(int x)
         {
             return x * x;
@@ -36,9 +45,17 @@ namespace DelegatesAdvanced
         static void Main()
         {
             //Rule : Delegate the your referece method signature(parametrs,and return type) -- just cross-check and confirm
+
+            //Program p = new Program();
             SquareDelegate squareDelegate = Square;
             int result1 = squareDelegate(10);
             Console.WriteLine(result1);
+
+
+
+            //SquareDelegate squareDelegate = Square;
+            //int result1 = squareDelegate(10);
+            //Console.WriteLine(result1);
 
             PrintMessageDelegatge printMessageDelegatge = PrintValue;
             printMessageDelegatge(10);
@@ -65,7 +82,7 @@ namespace DelegatesAdvanced
             };
             int result4 = squareDelegate3(10);
             Console.WriteLine(result3);
-            
+
             PrintMessageDelegatge printMessageDelegatge1 = delegate (int y)
             {
                 Console.WriteLine(y);

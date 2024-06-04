@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>DelegatesRealtimeExample.Program</StartupObject>
+    <StartupObject>FuncNamespace.FuncClass</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Built-In-DelegateTypes\1.Basics.cs" />
+    <Compile Include="Built-In-DelegateTypes\2.FuncDelegates.cs" />
     <Compile Include="Delegates\1.Delegates_Basics.cs" />
     <Compile Include="Delegates\2.Delegates_RealTimeExample.cs" />
     <Compile Include="Delegates\3.Delegates_Advanced.cs" />
