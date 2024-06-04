@@ -45,6 +45,8 @@ namespace FuncNamespace
 
             ShoppingCart shoppingCart = new ShoppingCart();
 
+
+            //Try to understand the data what we have.
             //Always do the practice together
             shoppingCart.ItemPrices.Add(10);
             shoppingCart.ItemPrices.Add(10.09);
@@ -82,7 +84,11 @@ namespace FuncNamespace
             bool isAnyItemMorethan50 = shoppingCart.ItemPrices.Any(itemPrice => itemPrice > 50);
             Console.WriteLine(isAnyItemMorethan50);  //true
 
+            //strong
+            IEnumerable<double> items9 = shoppingCart.ItemPrices.Take(2);
 
+            //anykind value it can accept
+            var items10 = shoppingCart.ItemPrices.Take(2);
 
 
 
