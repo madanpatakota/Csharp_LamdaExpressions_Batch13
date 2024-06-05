@@ -90,6 +90,18 @@ namespace FuncNamespace
             //anykind value it can accept
             var items10 = shoppingCart.ItemPrices.Take(2);
 
+            //shoppingCart.ItemPrices.Single()
+
+
+            //shoppingCart.ItemPrices.sel
+
+
+            //var newItems = items.Select((item) => item + 10);
+
+            //Select Join Single First
+
+            //shoppingCart.ItemPrices.
+
 
 
 

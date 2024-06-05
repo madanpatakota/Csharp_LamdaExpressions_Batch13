@@ -14,6 +14,7 @@ using System.Threading.Tasks;
 
 namespace DelegatesBascisNamespace
 {
+    //public delegate double Operation();
     class DelegatesBasics
     {
         //delegate double operation(double a, double b);
